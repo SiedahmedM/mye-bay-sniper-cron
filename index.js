@@ -40,3 +40,4 @@ console.log('✅ Cron scheduler started');
 console.log(`📡 Calling ${API_HOST}`);
 console.log('⏰ Check snipes: every 5 seconds');
 console.log('📊 Check results: every 2 minutes');
+console.log('🔑 CRON_SECRET:', CRON_SECRET ? 'Set (' + CRON_SECRET.length + ' chars)' : 'NOT SET!');
