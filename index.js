@@ -13,7 +13,7 @@ function callEndpoint(path, name) {
     hostname: API_HOST,
     path: path,
     method: 'GET',
-    headers: { 'x-cron-secret': CRON_SECRET }
+    headers: { 'x-cron-secret': process.env.CRON_SECRET }
   };
 
   https.get(options, res => {
